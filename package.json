@@ -1,6 +1,6 @@
 {
   "name": "@dignakov/rosnodejs",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Native ROS for nodejs",
   "main": "dist/index.js",
   "keywords": [
@@ -23,17 +23,27 @@
     "url": "git://github.com/dignakov/rosnodejs.git"
   },
   "devDependencies": {
-    "babel-cli": "^6.18.0",
-    "babel-preset-env": "^1.7.0",
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/plugin-transform-arrow-functions": "^7.25.9",
+    "@babel/plugin-transform-block-scoping": "^7.25.9",
+    "@babel/plugin-transform-classes": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
     "chai": "^4.1.2",
-    "mocha": "^5.2.0"
+    "mocha": "^11.0.1"
   },
   "dependencies": {
     "argparse": "1.0.10",
     "async": "2.6.4",
     "bn.js": "^4.11.6",
-    "bunyan": "1.8.12",
+    "braces": "^3.0.3",
+    "bunyan": "^1.8.15",
+    "chokidar": "^4.0.1",
+    "glob": "^11.0.0",
+    "json5": "^2.2.3",
     "md5": "2.2.1",
+    "micromatch": "^4.0.8",
+    "rimraf": "^6.0.1",
     "ultron": "1.1.1",
     "walker": "1.0.7",
     "xmlrpc-rosnodejs": "1.4.0"
@@ -46,6 +56,7 @@
     "test": "test"
   },
   "publishConfig": {
-    "@dignakov:registry": "https://npm.pkg.github.com"
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
