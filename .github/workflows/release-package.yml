@@ -14,8 +14,8 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 16
-      - run: source /opt/ros/noetic/setup.bash && npm ci
-      - run: source /opt/ros/noetic/setup.bash && npm test
+      - run: bash -c "source /opt/ros/noetic/setup.bash && npm ci"
+      - run: bash -c "source /opt/ros/noetic/setup.bash && npm test"
 
   publish-gpr:
     needs: build
