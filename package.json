@@ -1,5 +1,5 @@
 {
-  "name": "rosnodejs",
+  "name": "@dignakov/rosnodejs",
   "version": "3.1.0",
   "description": "Native ROS for nodejs",
   "main": "dist/index.js",
@@ -20,7 +20,7 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git://github.com/RethinkRobotics-opensource/rosnodejs.git"
+    "url": "git://github.com/dignakov/rosnodejs.git"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
