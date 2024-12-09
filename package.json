@@ -45,4 +45,7 @@
   "directories": {
     "test": "test"
   }
+  "publishConfig": {
+    "@dignakov:registry": "https://npm.pkg.github.com"
+  }
 }
