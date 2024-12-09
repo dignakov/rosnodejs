@@ -9,16 +9,13 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: osrf/ros:noetic-desktop
-      options: --entrypoint ""  # Override the default entrypoint
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: 16
-      - run: |
-        source /opt/ros/noetic/setup.bash
-        npm ci
-        npm test
+      - run: source /opt/ros/noetic/setup.bash && npm ci
+      - run: source /opt/ros/noetic/setup.bash && npm test
 
   publish-gpr:
     needs: build
